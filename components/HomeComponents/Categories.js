@@ -52,10 +52,10 @@ export default function Categories() {
 
         <div className="relative overflow-hidden z-10">
           {/* Left fade */}
-          <div className="hidden lg:block pointer-events-none absolute top-0 left-0 h-full w-30 bg-gradient-to-r from-white to-transparent z-10"></div>
+          <div className="hidden lg:block pointer-events-none absolute top-0 left-0 h-full w-50 bg-gradient-to-r from-teal-50 to-transparent z-10"></div>
 
           {/* Right fade */}
-          <div className="hidden lg:block pointer-events-none absolute top-0 right-0 h-full w-30 bg-gradient-to-l from-white to-transparent z-10"></div>
+          <div className="hidden lg:block pointer-events-none absolute top-0 right-0 h-full w-50 bg-gradient-to-l from-teal-50 to-transparent z-10"></div>
 
           {/* Swiper Carousel with Pagination */}
           <Swiper
