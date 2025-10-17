@@ -21,7 +21,7 @@ export default function Footer() {
                              priority
                            />
           <p className="text-base sm:text-lg font-semibold leading-relaxed">
-            It's Time To Pull In A <br />
+          It&apos;s Time To Pull In A <br />
             <span className="text-white">Professional</span>
           </p>
         </div>

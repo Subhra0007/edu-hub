@@ -257,7 +257,7 @@ export default function About() {
           className=" py-10"
           >
             <div className="bg-gradient-to-r from-pink-100 to-emerald-100 p-6 rounded-lg shadow-md flex flex-col justify-center items-center w-[300px] h-[200px] mx-auto ">
-              <p className="text-gray-700 italic text-center text-sm">"{testimonial.comment}"</p>
+              <p className="text-gray-700 italic text-center text-sm">&quot;{testimonial.comment}&quot;</p>
               <p className="mt-4 font-semibold text-gray-900">{testimonial.user}</p>
             </div>
           </SwiperSlide>
