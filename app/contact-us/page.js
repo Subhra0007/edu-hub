@@ -73,15 +73,80 @@ const ContactUs = () => {
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-8 relative z-10">
         {/* Header Section */}
         <div className="lg:w-1/2 space-y-4 text-center lg:text-left">
-          <h1 className="text-4xl font-bold mb-4 leading-snug">
-           Contact Us
-          </h1>
-          <p className="text-gray-900">
-           
-          </p>
-          <p className="text-gray-900">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries but also the leap into electronic typesetting
-          </p>
+         <div className="relative rounded-2xl p-6  backdrop-blur-xl border border-white/10 overflow-hidden shadow-lg group transition-all duration-300 flex flex-col gap-3 h-full bg-gradient-to-r from-pink-100 to-emerald-100 ">
+ 
+ 
+     
+  {/* Content layered above the gradient */}
+  <div className="relative z-10">
+    <h3 className="text-2xl font-semibold mb-3 text-emerald-600">
+      Contact Information
+    </h3>
+    <p className="text-gray-900 font-bold">Cyberspace Works</p>
+
+    {/* Phone */}
+    <p className="text-gray-900 flex items-center gap-2 mt-3">
+      <IoCallOutline />
+      <a href="tel:" className="hover:underline">
+        +91 1234567890
+      </a>
+    </p>
+
+    {/* Email */}
+    <p className="text-gray-900 flex items-center gap-2 mt-3">
+      <IoMailOutline />
+      <a
+        href="mailto:"
+        className="hover:underline"
+      >
+       abc@gmail.com
+      </a>
+    </p>
+
+    {/* Address */}
+    <p className="text-gray-900 flex items-center gap-2 mt-3">
+      <IoLocationOutline />
+      <span>
+       abc
+      </span>
+    </p>
+
+    {/* Social Media Icons */}
+    <div className="flex justify-center sm:justify-start space-x-4 mt-4 text-emerald-600 text-lg sm:text-xl">
+      <a
+        href="https://www.facebook.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaFacebookF className="cursor-pointer hover:scale-110 transition" />
+      </a>
+      <a
+        href="https://www.instagram.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaInstagram className="cursor-pointer hover:scale-110 transition" />
+      </a>
+      <a href="" target="_blank" rel="noopener noreferrer">
+        <FaWhatsapp className="cursor-pointer hover:scale-110 transition" />
+      </a>
+      <a
+        href=""
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaMapMarkerAlt className="cursor-pointer hover:scale-110 transition" />
+      </a>
+      <a
+        href="https://www.linkedin.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaLinkedin className="cursor-pointer hover:scale-110 transition" />
+      </a>
+    </div>
+  </div>
+</div>
         </div>
 
         {/* Form Section */}
@@ -181,7 +246,7 @@ const ContactUs = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="py-2 px-8 bg-pink-600 hover:bg-pink-700 text-black font-semibold rounded-full duration-300 cursor-pointer shadow-lg shadow-black/50 hover:brightness-110 transition"
+                  className="py-2 px-8 bg-white  text-black font-semibold rounded-full duration-300 cursor-pointer shadow-lg shadow-black/50 hover:brightness-110 transition"
                 >
                   {loading ? "Submitting..." : "Submit"}
                 </button>
@@ -199,81 +264,8 @@ const ContactUs = () => {
       </div>
 
       {/* Contact Info & Map */}
-      <div className="grid lg:grid-cols-2 gap-8 relative z-10 mt-16 max-w-6xl mx-auto">
-      <div className="relative rounded-2xl p-6  backdrop-blur-xl border border-white/10 overflow-hidden shadow-lg group transition-all duration-300 flex flex-col gap-3 h-full bg-gradient-to-r from-pink-100 to-emerald-100 ">
- 
- 
-     
-  {/* Content layered above the gradient */}
-  <div className="relative z-10">
-    <h3 className="text-2xl font-semibold mb-3 text-emerald-600">
-      Contact Information
-    </h3>
-    <p className="text-gray-900 font-bold">Cyberspace Works</p>
-
-    {/* Phone */}
-    <p className="text-gray-900 flex items-center gap-2 mt-3">
-      <IoCallOutline />
-      <a href="tel:" className="hover:underline">
-        +91 1234567890
-      </a>
-    </p>
-
-    {/* Email */}
-    <p className="text-gray-900 flex items-center gap-2 mt-3">
-      <IoMailOutline />
-      <a
-        href="mailto:"
-        className="hover:underline"
-      >
-       abc@gmail.com
-      </a>
-    </p>
-
-    {/* Address */}
-    <p className="text-gray-900 flex items-center gap-2 mt-3">
-      <IoLocationOutline />
-      <span>
-       abc
-      </span>
-    </p>
-
-    {/* Social Media Icons */}
-    <div className="flex justify-center sm:justify-start space-x-4 mt-4 text-emerald-600 text-lg sm:text-xl">
-      <a
-        href="https://www.facebook.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FaFacebookF className="cursor-pointer hover:scale-110 transition" />
-      </a>
-      <a
-        href="https://www.instagram.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FaInstagram className="cursor-pointer hover:scale-110 transition" />
-      </a>
-      <a href="" target="_blank" rel="noopener noreferrer">
-        <FaWhatsapp className="cursor-pointer hover:scale-110 transition" />
-      </a>
-      <a
-        href=""
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FaMapMarkerAlt className="cursor-pointer hover:scale-110 transition" />
-      </a>
-      <a
-        href="https://www.linkedin.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FaLinkedin className="cursor-pointer hover:scale-110 transition" />
-      </a>
-    </div>
-  </div>
-</div>
+      <div className=" gap-8 relative z-10 mt-16 max-w-6xl mx-auto">
+      
 
 
         <div className="rounded-2xl overflow-hidden border border-white/10 shadow-lg h-full">
