@@ -143,14 +143,14 @@ export default function Navbar() {
             </li>
 
             <li>
-              <Link
-                href="/contact-us"
-                onClick={() => setIsOpen(false)}
-                className="block w-full text-center px-4 py-2 rounded-full border border-white/50 text-white font-semibold  justify-center items-center gap-2 shadow hover:bg-white hover:text-emerald-600 transition"
-              >
-                <MdOutlineCall className="text-xl" />
-                <span>Call Us</span>
-              </Link>
+               <Link
+            href="/contact-us"
+             onClick={() => setIsOpen(false)}
+            className="px-4 py-2 rounded-full border border-white/50 text-white font-semibold flex items-center gap-2 shadow  transition"
+          >
+            <MdOutlineCall className="text-xl" />
+            <span>Call Us</span>
+          </Link>
             </li>
           </ul>
         </div>

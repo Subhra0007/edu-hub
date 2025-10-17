@@ -11,17 +11,16 @@ export default function HeroSection() {
   return (
     <div className="max-w-6xl mx-auto pt-30 pb-10 px-6 lg:px-0">
       <section className="relative flex flex-col-reverse md:flex-row items-center justify-between px-6 md:px-12 py-20 rounded-3xl bg-gradient-to-r from-pink-100 to-emerald-100 shadow-md">
-        
         {/* LEFT CONTENT */}
         <div className="flex-1 text-center md:text-left">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
             Start{" "}
             <span className="text-emerald-600 decoration-emerald-400 underline-offset-4">
-              Explore better skills through thousand 
+              Learning from the Best 
             </span>{" "}
-            online courses
+          
           </h1>
-          <div className="">
+          <div>
             <Link
               href="/contact-us"
               className="px-4 py-4 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold shadow hover:brightness-110 transition mr-5"
@@ -44,27 +43,36 @@ export default function HeroSection() {
               src={heroImg}
               alt="Online learning student"
               fill
-              className="object-cover "
+              className="object-cover"
             />
-
+          </div>
+          {/* Floating Icons */}
+          <div className="icon-circle absolute z-20">
             <Image
-  src={circleImg}
-  alt="Circle"
-  className="absolute top-[-10px] left-[-10px] w-10 h-10 animate-shake"
-/>
-
-<Image
-  src={cubeImg}
-  alt="Cube"
-  className="absolute top-[-10px] right-[-10px] w-10 h-10 animate-spin-slow"
-/>
-
-<Image
-  src={zigzagImg}
-  alt="Zigzag"
-  className="absolute bottom-[-10px] left-[-10px] w-12 h-12 animate-zigzag"
-/>
-
+              src={circleImg}
+              alt="Circle"
+              width={40}
+              height={40}
+              className="object-contain "
+            />
+          </div>
+          <div className="icon-cube absolute z-20">
+            <Image
+              src={cubeImg}
+              alt="Cube"
+              width={40}
+              height={40}
+              className="object-contain z-20"
+            />
+          </div>
+          <div className="icon-zigzag absolute z-20 ">
+            <Image
+              src={zigzagImg}
+              alt="Zigzag"
+              width={48}
+              height={48}
+              className="object-contain z-20"
+            />
           </div>
         </div>
       </section>

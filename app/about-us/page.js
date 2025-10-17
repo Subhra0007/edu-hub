@@ -85,9 +85,9 @@ export default function About() {
   ];
 
   const about2 = [
-    { icon: <FaLightbulb className="text-3xl text-black" />, title: "Innovation", desc: "We bring creative approaches to learning and education." },
-    { icon: <FaUsers className="text-3xl text-black" />, title: "Community", desc: "We foster collaboration between educators and learners." },
-    { icon: <FaBullseye className="text-3xl text-black" />, title: "Focus", desc: "We focus on meaningful results and student growth." },
+    { icon: <FaLightbulb className="text-3xl text-white" />, title: "Innovation", desc: "We bring creative approaches to learning and education." },
+    { icon: <FaUsers className="text-3xl text-white" />, title: "Community", desc: "We foster collaboration between educators and learners." },
+    { icon: <FaBullseye className="text-3xl text-white" />, title: "Focus", desc: "We focus on meaningful results and student growth." },
   ];
 
 
@@ -231,7 +231,7 @@ export default function About() {
         <section>
           <div className="container mx-auto  max-w-6xl mt-10">
       <h2 className="text-4xl font-bold text-center mb-6 text-black">Testimonials</h2>
-      <div className="relative overflow-hidden z-10">
+      <div className="relative overflow-hidden z-10 mb-10">
           {/* Left & Right fade */}
           <div className="hidden lg:block pointer-events-none absolute top-0 left-0 h-full w-30 bg-gradient-to-r from-teal-50 to-transparent z-10"></div>
           <div className="hidden lg:block pointer-events-none absolute top-0 right-0 h-full w-30 bg-gradient-to-l from-teal-50 to-transparent z-10"></div>
@@ -264,18 +264,28 @@ export default function About() {
         ))}
       </Swiper>
       </div>
-        <div className="text-black text-center">
-            <h3 className="text-3xl py-6 font-semibold">Interested in Our Courses ?</h3>
-            <p>Register now to get Environmental
-                  <span className="ml-4">
-                        <Link
-            href="/contact-us"
-            className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-4 rounded-full font-semibold transition ">
-              Register →
-            </Link>
-                  </span>
-            </p>
-      </div>
+       <div className="bg-emerald-500 text-black py-10 rounded-3xl ">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center justify-between px-10">
+    <div>
+      <h3 className="text-3xl font-semibold mb-3">
+        Interested in Our Courses?
+      </h3>
+      <p className="text-lg">
+        Register now to get enrollment.
+      </p>
+    </div>
+
+    <div className="flex justify-center  mt-6 md:mt-0 md:justify-end">
+      <Link
+        href="/contact-us"
+        className="bg-white text-black px-8 py-4 rounded-full font-semibold transition-all duration-300 border shadow border-white/50"
+      >
+        Register →
+      </Link>
+    </div>
+  </div>
+</div>
+
     </div>
         </section>
 

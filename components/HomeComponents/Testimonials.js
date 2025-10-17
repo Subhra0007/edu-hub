@@ -52,18 +52,28 @@ const Testimonials = () => {
         ))}
       </Swiper>
       </div>
-      <div className="text-black text-center">
-            <h3 className="text-3xl py-6 font-semibold">Interested in Our Courses ?</h3>
-            <p>Register now to get Environmental
-                  <span className="ml-4">
-                        <Link
-            href="/contact-us"
-            className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-4 rounded-full font-semibold transition ">
-              Register →
-            </Link>
-                  </span>
-            </p>
-      </div>
+   <div className="bg-emerald-500 text-black py-10 rounded-3xl ">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center justify-between px-10">
+    <div>
+      <h3 className="text-3xl font-semibold mb-3">
+        Interested in Our Courses?
+      </h3>
+      <p className="text-lg">
+        Register now to get enrollment.
+      </p>
+    </div>
+
+    <div className="flex justify-center  mt-6 md:mt-0 md:justify-end">
+      <Link
+        href="/contact-us"
+        className="bg-white text-black px-8 py-4 rounded-full font-semibold transition-all duration-300 border shadow border-white/50 "
+      >
+        Register →
+      </Link>
+    </div>
+  </div>
+</div>
+
     </div>
   );
 };
