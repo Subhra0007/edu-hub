@@ -146,7 +146,7 @@ export default function Navbar() {
                <Link
             href="/contact-us"
              onClick={() => setIsOpen(false)}
-            className="px-4 py-2 rounded-full border border-white/50 text-white font-semibold flex items-center gap-2 shadow  transition"
+            className="px-4 py-2 rounded-full border border-white/50 text-white font-semibold flex items-center gap-2 shadow  transition justify-center"
           >
             <MdOutlineCall className="text-xl" />
             <span>Call Us</span>
