@@ -69,7 +69,7 @@ body {
 
 /* ========= New Custom Animations ========= */
 .icon-cube {
-  z-index: 9;
+
   top: -0.8em;
   right: 1em;
   animation: cubeRotate 3s infinite;
@@ -88,7 +88,7 @@ body {
 }
 
 .icon-circle {
-  z-index: 9;
+
   left: 0;
   bottom: 0;
   animation: shakeEffect 3s linear infinite;
@@ -102,7 +102,7 @@ body {
 }
 
 .icon-zigzag {
-  z-index: 9;
+ 
   top: 1.5em;
   left: -0.3em;
   animation: zigzagAnimation 3s linear infinite;
