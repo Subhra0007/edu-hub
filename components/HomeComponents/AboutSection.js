@@ -68,7 +68,7 @@ export default function AboutSection() {
           Why <span className="text-orange-600">Choose</span> Us
         </h2>
         {/* Top Section */}
-        <div className="relative grid lg:grid-cols-2 gap-12 items-center px-6 md:px-12 py-20 rounded-3xl bg-gradient-to-r from-sky-300 to-emerald-300  z-0 shadow-md">
+        <div className="relative grid lg:grid-cols-2 gap-12 items-center px-6 md:px-12 py-20 rounded-3xl bg-gradient-to-r from-sky-300 to-emerald-300  z-0 shadow-md p-6">
           {/* Subtle background circle design - bottom right */}
     <div className="absolute right-10 top-0 w-50 h-50 bg-white/10 rounded-full z-11"></div>
     <div className="absolute right-0 top-0 w-32 h-32 bg-white/10 rounded-full z-11"></div>

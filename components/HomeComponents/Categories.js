@@ -44,8 +44,8 @@ const categories = [
 
 export default function Categories() {
   return (
-    <section className="lg:mt-30 mt-15">
-      <div className="max-w-7xl mx-auto text-center px-6 lg:px-0 ">
+    <section className="lg:mt-30 mt-15 px-6 lg:px-0 ">
+      <div className="max-w-7xl mx-auto text-center ">
         <h2 className="text-3xl font-bold mb-8 text-gray-800">
           Our <span className="text-orange-600">Categories</span>
         </h2>
@@ -73,7 +73,7 @@ export default function Categories() {
               320: { slidesPerView: 2, spaceBetween: 16 },
               640: { slidesPerView: 3, spaceBetween: 20 },
               1024: { slidesPerView: 5, spaceBetween: 28 },
-              1280: { slidesPerView: 6, spaceBetween: 32 },
+              1280: { slidesPerView: 7, spaceBetween: 32 },
             }}
             className="pb-10"
           >

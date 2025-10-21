@@ -52,8 +52,8 @@ const Testimonials = () => {
         ))}
       </Swiper>
       </div>
-   <div className="bg-slate-900 text-slate-50 py-10 rounded-3xl mt-15 text-center">
-  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center justify-between px-10 relative">
+   <div className="bg-slate-900 text-slate-50 py-10 rounded-3xl mt-15 px-6 ">
+  <div className=" grid grid-cols-1 md:grid-cols-2 items-center justify-between relative p-6 ">
     <div className="absolute right-90 top-0 w-40 h-40 bg-white/10 rounded-full"></div>
       <div className="absolute right-100 bottom-0 w-72 h-72 bg-white/10 rounded-full"></div>
     <div>

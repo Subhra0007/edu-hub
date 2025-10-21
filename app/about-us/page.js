@@ -100,7 +100,7 @@ export default function About() {
   ];
 
   return (
-    <div className="text-gray-800 px-6 pt-22 pb-10 space-y-24 bg-slate-100 lg:px-0">
+    <div className="text-gray-800  pt-22 pb-10 space-y-24 bg-slate-100 px-6 lg:px-0">
       <div className="max-w-7xl mx-auto ">
 
         {/* ========== How it started ========== */}
@@ -161,7 +161,7 @@ export default function About() {
 
       
     {/* ========== Meet the Team ========== */}
-<section className=" relative mt-15 px-4">
+<section className=" relative mt-15 ">
   <h2 className="text-center text-3xl font-bold mb-3">
     Meet our dedicated team of <span className="text-orange-600">Educators</span>
   </h2>
@@ -211,20 +211,22 @@ export default function About() {
 </section>
 
         {/* ========== About (2) ========== */}
+        
          <h2 className="text-3xl font-bold mb-13 text-gray-800 text-center mt-5">
           Why <span className="text-orange-600">Choose</span> Us
         </h2>
         <section className="grid md:grid-cols-3 gap-10 mb-14 mt-3">
            
           {about2.map((item, i) => (
-            <div key={i} className="bg-slate-900  rounded-3xl p-8 text-center transition shadow-md ">
+            <div key={i} className="bg-slate-900  rounded-3xl  text-center transition shadow-md p-8">
               <div className="flex justify-center mb-4 ">{item.icon}</div>
               <h3 className="text-xl font-bold mb-2 text-slate-50">{item.title}</h3>
               <p className="text-gray-300">{item.desc}</p>
             </div>
           ))}
+       
         </section>
-
+        
       
 
         {/* ========== Testimonials ========== */}
@@ -265,8 +267,8 @@ export default function About() {
         ))}
       </Swiper>
       </div>
-       <div className="bg-slate-900 text-slate-50 py-10 rounded-3xl mt-15 text-center">
-  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center justify-between px-10 relative">
+       <div className="bg-slate-900 text-slate-50 py-10 rounded-3xl mt-15 ">
+  <div className=" grid grid-cols-1 md:grid-cols-2 items-center justify-between relative p-8 ">
      <div className="absolute right-90 top-0 w-40 h-40 bg-white/10 rounded-full"></div>
       <div className="absolute right-100 bottom-0 w-72 h-72 bg-white/10 rounded-full"></div>
     <div>

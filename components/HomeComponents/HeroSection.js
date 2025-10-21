@@ -20,8 +20,8 @@ import heroImg3 from "@/public/3.jpg";
 export default function HeroSection() {
   return (
     <div className="max-w-7xl mx-auto pt-22 pb-5 px-6 relative lg:px-0 ">
-      <section className="rounded-3xl bg-gradient-to-r from-sky-300 to-emerald-300 shadow-md pb-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 px-5  pt-10 pb-14">
+      <section className="rounded-3xl bg-gradient-to-r from-sky-300 to-emerald-300 shadow-md pb-20 pt-10 p-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 px-5  pt-10 pb-14 ">
           {/* LEFT CONTENT */}
           <div className="text-center md:text-left order-1">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
