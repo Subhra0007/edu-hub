@@ -105,7 +105,7 @@ export default function About() {
 
         {/* ========== How it started ========== */}
         <section className="grid md:grid-cols-2 gap-10 items-top mb-10">
-          <div className="lg:text-left text-center bg-sky-500 rounded-3xl p-8  ">
+          <div className="lg:text-left text-center bg-sky-500 rounded-3xl p-6  ">
             <h2 className="text-gray-300 text-sm uppercase mb-2 tracking-wider ">How it started</h2>
             <h1 className="text-4xl font-bold leading-tight mb-4 text-black">
               Our Dream is <br /> Global Learning Transformation
@@ -142,7 +142,7 @@ export default function About() {
 
         {/* ========== Mission & Vision ========== */}
         <section className="grid md:grid-cols-2 gap-10 mb-10 mt-15">
-          <div className=" bg-sky-500  rounded-3xl p-8  transition">
+          <div className=" bg-sky-500  rounded-3xl p-6  transition">
             <FaBullseye className="text-4xl text-orange-600 mb-4" />
             <h2 className="text-2xl font-bold mb-3 text-black">Our Mission</h2>
             <p className="text-gray-800">
@@ -150,7 +150,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="bg-sky-500 rounded-3xl p-8  transition">
+          <div className="bg-sky-500 rounded-3xl p-6  transition">
             <FaEye className="text-4xl text-orange-600 mb-4" />
             <h2 className="text-2xl font-bold mb-3 text-black">Our Vision</h2>
             <p className="text-gray-800">
@@ -218,7 +218,7 @@ export default function About() {
         <section className="grid md:grid-cols-3 gap-10 mb-14 mt-3">
            
           {about2.map((item, i) => (
-            <div key={i} className="bg-slate-900  rounded-3xl  text-center transition shadow-md p-8">
+            <div key={i} className="bg-slate-900  rounded-3xl  text-center transition shadow-md p-6">
               <div className="flex justify-center mb-4 ">{item.icon}</div>
               <h3 className="text-xl font-bold mb-2 text-slate-50">{item.title}</h3>
               <p className="text-gray-300">{item.desc}</p>
@@ -268,7 +268,7 @@ export default function About() {
       </Swiper>
       </div>
        <div className="bg-slate-900 text-slate-50 py-10 rounded-3xl mt-15 ">
-  <div className=" grid grid-cols-1 md:grid-cols-2 items-center justify-between relative p-8 ">
+  <div className=" grid grid-cols-1 md:grid-cols-2 items-center justify-between relative p-6 ">
      <div className="absolute right-90 top-0 w-40 h-40 bg-white/10 rounded-full"></div>
       <div className="absolute right-100 bottom-0 w-72 h-72 bg-white/10 rounded-full"></div>
     <div>
