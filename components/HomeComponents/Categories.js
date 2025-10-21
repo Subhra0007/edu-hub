@@ -44,7 +44,7 @@ const categories = [
 
 export default function Categories() {
   return (
-    <section className="lg:mt-45 mt-15">
+    <section className="lg:mt-30 mt-15">
       <div className="max-w-7xl mx-auto text-center px-6 lg:px-0 ">
         <h2 className="text-3xl font-bold mb-8 text-gray-800">
           Our <span className="text-orange-600">Categories</span>
