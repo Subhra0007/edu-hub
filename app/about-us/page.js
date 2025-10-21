@@ -142,7 +142,7 @@ export default function About() {
 
         {/* ========== Mission & Vision ========== */}
         <section className="grid md:grid-cols-2 gap-10 mb-10 mt-15">
-          <div className=" bg-sky-300  rounded-3xl p-8  transition">
+          <div className=" bg-sky-500  rounded-3xl p-8  transition">
             <FaBullseye className="text-4xl text-orange-600 mb-4" />
             <h2 className="text-2xl font-bold mb-3 text-black">Our Mission</h2>
             <p className="text-gray-800">

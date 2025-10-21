@@ -131,7 +131,7 @@ export default function Navbar() {
                 </li>
               );
             })}
-            <div className="flex pt-4 gap-3">
+            <div className="flex pt-4 gap-3 justify-center">
             <li className="">
               <Link
                 href="/contact-us"
