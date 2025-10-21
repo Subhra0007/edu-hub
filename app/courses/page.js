@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import { FaStar, FaRegStar, FaStarHalfAlt } from "react-icons/fa";
 import course from "@/public/course.jpeg";
 
 const courses = [
@@ -24,7 +25,7 @@ const courses = [
     category: "UI/UX Design",
     image: course,
     lessons: 14,
-    rating: 5.0,
+    rating: 4.9,
     reviews: 3,
     author: "Mark Alen",
     price: "₹4,900",
@@ -48,7 +49,7 @@ const courses = [
     category: "Programming",
     image: course,
     lessons: 15,
-    rating: 5.0,
+    rating: 4.8,
     reviews: 3,
     author: "Alex Mohr",
     price: "₹5,900",
@@ -188,17 +189,37 @@ const courses = [
 ];
 
 export default function MostPopularCourses() {
+  // ⭐ Function to render stars dynamically
+  const renderStars = (rating) => {
+    const stars = [];
+    const fullStars = Math.floor(rating);
+    const hasHalfStar = rating % 1 >= 0.5;
+    const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+
+    for (let i = 0; i < fullStars; i++) {
+      stars.push(<FaStar key={`full-${i}`} className="text-yellow-400" />);
+    }
+    if (hasHalfStar) {
+      stars.push(<FaStarHalfAlt key="half" className="text-yellow-400" />);
+    }
+    for (let i = 0; i < emptyStars; i++) {
+      stars.push(<FaRegStar key={`empty-${i}`} className="text-yellow-400" />);
+    }
+
+    return stars;
+  };
+
   return (
     <section className="pt-25 text-black bg-slate-100 pb-10">
-      <div className="container max-w-6xl mx-auto px-6 lg:px-0">
+      <div className="container max-w-7xl mx-auto px-6 lg:px-0">
         {/* Header */}
-        <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold ">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-bold">
             Our <span className="text-orange-600">Courses</span>
           </h2>
-         <p className="leading-relaxed mt-5 text-gray-800">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            </p>
+          <p className="leading-relaxed mt-6 text-gray-800">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
         </div>
 
         {/* Grid Layout */}
@@ -206,54 +227,53 @@ export default function MostPopularCourses() {
           {courses.map((course) => (
             <div
               key={course.id}
-              className="rounded-xl overflow-hidden shadow-md transition-transform duration-300 hover:scale-[1.03] bg-sky-500"
+              className="rounded-3xl overflow-hidden shadow-md transition-transform duration-300 hover:scale-[1.03] bg-slate-900 text-white"
             >
-             <div className="relative p-2">
-                                 <Image
-                                   src={course.image}
-                                   alt={course.title}
-                                   width={400}
-                                   height={250}
-                                   className="w-full h-40 object-cover rounded-2xl"
-                                 />
-                                 <span className="absolute top-4 left-4 bg-red-500 text-xs font-semibold px-3 py-1 rounded-full">
-                                   {course.level}
-                                 </span>
-                               </div>
+              <div className="relative p-2">
+                <Image
+                  src={course.image}
+                  alt={course.title}
+                  width={400}
+                  height={250}
+                  className="w-full h-40 object-cover rounded-3xl"
+                />
+                <span className="absolute top-4 left-4 bg-red-500 text-xs font-semibold px-3 py-1 rounded-full">
+                  {course.level}
+                </span>
+              </div>
 
-                           <div className="p-5 flex flex-col justify-between h-[220px] mb-5">
-                    <div>
-                      <span className="text-xs bg-gray-100 px-2 py-1 rounded-md">
-                        {course.category}
-                      </span>
+              <div className="p-5 flex flex-col justify-between h-[220px] mb-5">
+                <div>
+                  <span className="text-xs bg-gray-100 text-black px-2 py-1 rounded-md">
+                    {course.category}
+                  </span>
 
-                      <h3 className="mt-3 text-lg font-semibold leading-tight">
-                        {course.title}
-                      </h3>
+                  <h3 className="mt-3 text-lg font-semibold leading-tight">
+                    {course.title}
+                  </h3>
 
-                      <div className="flex items-center mt-2 text-sm text-yellow-400">
-                        ⭐ {course.rating}
-                        <span className="text-gray-900 ml-1">
-                          ({course.reviews})
-                        </span>
-                      </div>
-
-                      <div className="mt-2 text-gray-900 text-sm">
-                        📘 {course.lessons} Lessons
-                      </div>
-                    </div>
-
-                    <div>
-                      <p className="text-sm mt-2">
-                        By:{" "}
-                        <span className="text-slate-700">{course.author}</span>
-                      </p>
-
-                      <p className="mt-3 text-black font-semibold ">
-                        {course.price}
-                      </p>
-                    </div>
+                  {/* ⭐ Dynamic Rating Section */}
+                  <div className="flex items-center mt-2 text-sm gap-1">
+                    <div className="flex">{renderStars(course.rating)}</div>
+                    <span className="ml-2 text-gray-200">{course.rating}</span>
+                    <span className="ml-1 text-gray-200">({course.reviews})</span>
                   </div>
+
+                  <div className="mt-2 text-gray-200 text-sm">
+                    📘 {course.lessons} Lessons
+                  </div>
+                </div>
+
+                <div>
+                  <p className="text-sm mt-2 text-gray-300">
+                    By: <span className="text-white">{course.author}</span>
+                  </p>
+
+                  <p className="mt-3 text-emerald-300 font-semibold">
+                    {course.price}
+                  </p>
+                </div>
+              </div>
             </div>
           ))}
         </div>

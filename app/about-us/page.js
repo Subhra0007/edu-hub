@@ -100,13 +100,13 @@ export default function About() {
   ];
 
   return (
-    <div className="text-gray-800 px-6 pt-22 pb-10 space-y-24 bg-slate-100">
+    <div className="text-gray-800 px-6 pt-22 pb-10 space-y-24 bg-slate-100 lg:px-0">
       <div className="max-w-7xl mx-auto ">
 
         {/* ========== How it started ========== */}
         <section className="grid md:grid-cols-2 gap-10 items-top mb-10">
-          <div className="lg:text-left text-center bg-gradient-to-r from-sky-400 to-emerald-500  rounded-2xl p-8  ">
-            <h2 className="text-orange-600 text-sm uppercase mb-2 tracking-wider">How it started</h2>
+          <div className="lg:text-left text-center bg-sky-500 rounded-3xl p-8  ">
+            <h2 className="text-gray-300 text-sm uppercase mb-2 tracking-wider ">How it started</h2>
             <h1 className="text-4xl font-bold leading-tight mb-4 text-black">
               Our Dream is <br /> Global Learning Transformation
             </h1>
@@ -122,18 +122,18 @@ export default function About() {
           </div>
 
           <div className="space-y-6">
-            <div className="w-full h-60 rounded-2xl overflow-hidden flex items-center justify-center">
+            <div className="w-full h-60 rounded-3xl overflow-hidden flex items-center justify-center">
               <Image src="/aboutpage1.webp" alt="About Image" width={500} height={300} className="object-cover w-full h-full opacity-90" />
             </div>
 
             {/* Stats Section with Counting Animation */}
             <div ref={triggerRef} className="grid grid-cols-2 gap-4">
               {statsData.map((s, i) => (
-                <div key={i} className="bg-sky-500 rounded-xl text-center py-6  transition">
-                  <h3 className=" text-3xl font-bold text-black">
+                <div key={i} className="bg-slate-900 rounded-3xl text-center py-6  transition">
+                  <h3 className=" text-3xl font-bold text-slate-50">
                     <Counter target={s.target} start={inView} />
                   </h3>
-                  <p className="text-gray-700 text-sm mt-1">{s.label}</p>
+                  <p className="text-gray-300 text-sm mt-1">{s.label}</p>
                 </div>
               ))}
             </div>
@@ -141,16 +141,16 @@ export default function About() {
         </section>
 
         {/* ========== Mission & Vision ========== */}
-        <section className="grid md:grid-cols-2 gap-10 mb-10 mt-10">
-          <div className=" bg-gradient-to-r from-sky-400 to-emerald-500  rounded-2xl p-8  transition">
+        <section className="grid md:grid-cols-2 gap-10 mb-10 mt-15">
+          <div className=" bg-slate-900  rounded-3xl p-8  transition">
             <FaBullseye className="text-4xl text-orange-600 mb-4" />
-            <h2 className="text-2xl font-bold mb-3 text-black">Our Mission</h2>
-            <p className="text-gray-800">
+            <h2 className="text-2xl font-bold mb-3 text-slate-50">Our Mission</h2>
+            <p className="text-gray-300">
               Empower educators and learners through intelligent tools and personalized education systems.
             </p>
           </div>
 
-          <div className="bg-gradient-to-r from-sky-400 to-emerald-500 rounded-2xl p-8 hover:bg-gray-900/80 transition">
+          <div className="bg-sky-500 rounded-3xl p-8  transition">
             <FaEye className="text-4xl text-orange-600 mb-4" />
             <h2 className="text-2xl font-bold mb-3 text-black">Our Vision</h2>
             <p className="text-gray-800">
@@ -161,8 +161,8 @@ export default function About() {
 
       
     {/* ========== Meet the Team ========== */}
-<section className=" relative mt-20 px-4">
-  <h2 className="text-center text-3xl font-bold mb-5">
+<section className=" relative mt-15 px-4">
+  <h2 className="text-center text-3xl font-bold mb-3">
     Meet our dedicated team of <span className="text-orange-600">Educators</span>
   </h2>
  {/* Left fade */}
@@ -211,16 +211,16 @@ export default function About() {
 </section>
 
         {/* ========== About (2) ========== */}
-         <h2 className="text-3xl font-bold mb-8 text-gray-800 text-center mt-10">
+         <h2 className="text-3xl font-bold mb-13 text-gray-800 text-center mt-6">
           Why <span className="text-orange-600">Choose</span> Us
         </h2>
-        <section className="grid md:grid-cols-3 gap-10 mb-20">
+        <section className="grid md:grid-cols-3 gap-10 mb-15">
            
           {about2.map((item, i) => (
-            <div key={i} className="bg-sky-500  rounded-2xl p-8 text-center transition shadow-md ">
+            <div key={i} className="bg-slate-900  rounded-3xl p-8 text-center transition shadow-md ">
               <div className="flex justify-center mb-4 ">{item.icon}</div>
-              <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-              <p className="text-gray-800">{item.desc}</p>
+              <h3 className="text-xl font-bold mb-2 text-slate-50">{item.title}</h3>
+              <p className="text-gray-300">{item.desc}</p>
             </div>
           ))}
         </section>
@@ -229,9 +229,9 @@ export default function About() {
 
         {/* ========== Testimonials ========== */}
         <section>
-          <div className="container mx-auto  max-w-7xl mt-8">
+          <div className="container mx-auto  max-w-7xl mt-3 px-6 lg:px-0">
       <h2 className="text-4xl font-bold text-center mb-4 text-black">Testimonials</h2>
-      <div className="relative overflow-hidden z-10 mb-10">
+      <div className="relative overflow-hidden z-10 mb-3">
           {/* Left & Right fade */}
           <div className="hidden lg:block pointer-events-none absolute top-0 left-0 h-full w-30 bg-gradient-to-r from-slate-100 to-transparent z-10"></div>
           <div className="hidden lg:block pointer-events-none absolute top-0 right-0 h-full w-30 bg-gradient-to-l from-slate-100 to-transparent z-10"></div>
@@ -247,7 +247,7 @@ export default function About() {
         breakpoints={{
           320: { slidesPerView: 1, spaceBetween: 10 },
           640: { slidesPerView: 2, spaceBetween: 15 },
-          1024: { slidesPerView: 3, spaceBetween: 20 },
+          1024: { slidesPerView: 4, spaceBetween: 20 },
         }}
         modules={[Autoplay, Pagination]}
         className="pb-10"
@@ -256,7 +256,7 @@ export default function About() {
           <SwiperSlide key={index}
           className=" py-10"
           >
-            <div className="bg-gradient-to-r from-sky-400 to-emerald-600 p-6 rounded-lg shadow-md flex flex-col justify-center items-center w-[250px] h-[200px] mx-auto ">
+            <div className="bg-sky-500 p-6 rounded-3xl shadow-md flex flex-col justify-center items-center w-[300px] h-[200px] mx-auto ">
               <p className="text-gray-800 italic text-center text-sm">&quot;{testimonial.comment}&quot;</p>
               <p className="mt-4 font-semibold text-gray-900">{testimonial.user}</p>
             </div>
@@ -264,13 +264,13 @@ export default function About() {
         ))}
       </Swiper>
       </div>
-       <div className="bg-sky-500 text-black py-10 rounded-3xl mt-16 ">
+       <div className="bg-slate-900 text-slate-50 py-10 rounded-3xl mt-15 ">
   <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center justify-between px-10">
     <div>
       <h3 className="text-3xl font-semibold mb-3">
         Interested in Our Courses?
       </h3>
-      <p className="text-lg text-gray-800">
+      <p className="text-lg text-gray-300">
         Register now to get enrollment.
       </p>
     </div>
@@ -278,7 +278,7 @@ export default function About() {
     <div className="flex justify-center  mt-6 md:mt-0 md:justify-end">
       <Link
         href="/contact-us"
-        className="bg-white text-black px-8 py-4 rounded-full font-semibold transition-all duration-300 border shadow border-white/50"
+        className="bg-white text-black px-8 py-4 rounded-full font-semibold transition-all duration-300 border shadow border-white/50 hover:bg-gray-400"
       >
         Register →
       </Link>

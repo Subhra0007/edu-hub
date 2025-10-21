@@ -62,7 +62,7 @@ export default function Navbar() {
                   animate={{
                     width:
                       hovered === item.href || isActive ? "100%" : "0%",
-                    backgroundColor: isActive ? "#ffffff" : "#ea580c",
+                    backgroundColor: isActive ? "#ea580c" : "#ea580c",
                   }}
                   transition={{ duration: 0.3 }}
                   className="absolute left-0 -bottom-1 h-[2px] rounded-full"
@@ -76,14 +76,14 @@ export default function Navbar() {
         <div className="hidden md:flex gap-4">
           <Link
             href="/contact-us"
-            className="px-4 py-2 rounded-full bg-white text-black font-semibold shadow hover:brightness-110 transition"
+            className="px-4 py-2 rounded-full bg-white text-black font-semibold shadow hover:brightness-110 transition hover:bg-gray-400"
           >
             Register
           </Link>
 
           <Link
             href="/contact-us"
-            className="px-4 py-2 rounded-full border border-white/50 text-white font-semibold flex items-center gap-2 shadow  transition"
+            className="px-4 py-2 rounded-full border border-white/50 text-white font-semibold flex items-center gap-2 shadow  transition hover:bg-slate-50 hover:text-black"
           >
             <MdOutlineCall className="text-xl" />
             <span>Call Us</span>
@@ -93,7 +93,7 @@ export default function Navbar() {
         {/* ===== Mobile Menu Toggle ===== */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-white text-2xl focus:outline-none"
+          className="md:hidden text-slate-50 text-2xl focus:outline-none"
         >
           {isOpen ? <FiX /> : <FiMenu />}
         </button>
@@ -101,7 +101,7 @@ export default function Navbar() {
 
       {/* ===== Mobile Menu ===== */}
       {isOpen && (
-        <div className="md:hidden bg-emerald-500 text-black rounded-3xl mx-4 mt-2 p-6 shadow-lg animate-fadeIn">
+        <div className="md:hidden bg-gray-900 text-slate-50 rounded-3xl mx-4 mt-2 p-6 shadow-lg animate-fadeIn">
           <ul className="flex flex-col gap-4 text-lg font-medium">
             {navLinks.map((item) => {
               const isActive = pathname === item.href;
@@ -111,7 +111,7 @@ export default function Navbar() {
                     href={item.href}
                     onClick={() => setIsOpen(false)}
                     className={`relative block pb-1 transition-colors duration-300 ${
-                      isActive ? "text-white" : "text-black hover:text-white"
+                      isActive ? "text-emerald-600" : "text-slate-50 hover:text-white"
                     }`}
                     onMouseEnter={() => setHovered(item.href)}
                     onMouseLeave={() => setHovered(null)}
@@ -122,7 +122,7 @@ export default function Navbar() {
                       animate={{
                         width:
                           hovered === item.href || isActive ? "100%" : "0%",
-                        backgroundColor: isActive ? "#ffffff" : "#ff69b4",
+                        backgroundColor: isActive ? "#ea580c" : "#ea580c",
                       }}
                       transition={{ duration: 0.3 }}
                       className="absolute left-0 bottom-0 h-[2px] rounded-full"
@@ -136,7 +136,7 @@ export default function Navbar() {
               <Link
                 href="/contact-us"
                 onClick={() => setIsOpen(false)}
-                className="block w-full text-center px-4 py-2 rounded-full bg-white text-black font-semibold shadow hover:brightness-110 transition"
+                className="block w-full text-center px-4 py-2 rounded-full bg-white text-black font-semibold shadow hover:brightness-110 transition hover:bg-gray-400"
               >
                 Register
               </Link>
@@ -146,7 +146,7 @@ export default function Navbar() {
                <Link
             href="/contact-us"
              onClick={() => setIsOpen(false)}
-            className="px-4 py-2 rounded-full border border-white/50 text-white font-semibold flex items-center gap-2 shadow  transition justify-center"
+            className="px-4 py-2 rounded-full border border-white/50 text-white font-semibold flex items-center gap-2 shadow  transition justify-center hover:bg-slate-50 hover:text-black"
           >
             <MdOutlineCall className="text-xl" />
             <span>Call Us</span>

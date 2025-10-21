@@ -23,8 +23,8 @@ export default function HomePage() {
     
       <HeroSection />
       <Categories/>
-      <FeatureSection/>
       <OurCourses/>
+      <FeatureSection/>
       <AboutSection/>
       <Testimonial/>
       <OurPartners/>

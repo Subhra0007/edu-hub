@@ -63,15 +63,15 @@ export default function AboutSection() {
 
   return (
     <section className="mt-15 relative">
-      <div className="max-w-7xl mx-auto relative px-6 ">
-        <h2 className="text-3xl font-bold mb-8 text-gray-800 text-center">
+      <div className="max-w-7xl mx-auto relative px-6 lg:px-0">
+        <h2 className="text-3xl font-bold mb-14 text-gray-800 text-center">
           Why <span className="text-orange-600">Choose</span> Us
         </h2>
         {/* Top Section */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center px-6 md:px-12 py-20 rounded-3xl bg-gradient-to-r from-sky-400 to-emerald-500 relative z-0 shadow-md">
+        <div className="grid lg:grid-cols-2 gap-12 items-center px-6 md:px-12 py-20 rounded-3xl bg-gradient-to-r from-sky-300 to-emerald-300 relative z-0 shadow-md">
           <div>
             <h2 className="text-4xl font-bold text-gray-800 mb-4">
-              We Build <span className="text-orange-600">Digital Success</span>
+              We Build <span className="text-orange-500">Digital Success</span>
             </h2>
             <p className="text-gray-900 mb-6 leading-relaxed">
               Our mission is to empower brands through innovative digital strategies and cutting-edge technology.
@@ -88,7 +88,7 @@ export default function AboutSection() {
 
               <Link
             href="/about-us"
-            className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-4 rounded-full font-semibold transition ">
+            className="bg-emerald-700 hover:bg-emerald-800 text-white px-6 py-4 rounded-full font-semibold transition ">
               About Us
             </Link>
           </div>
@@ -112,12 +112,12 @@ export default function AboutSection() {
           {statsData.map((item, i) => (
             <div
               key={i}
-              className="bg-sky-500 shadow-md rounded-xl py-6 hover:shadow-lg transition"
+              className="bg-slate-900 shadow-md rounded-xl py-6 hover:shadow-lg transition"
             >
-              <h3 className="text-3xl font-bold text-black">
+              <h3 className="text-3xl font-bold text-slate-50">
                 <Counter target={item.target} start={inView} />
               </h3>
-              <p className="text-gray-700 text-sm mt-1">{item.label}</p>
+              <p className="text-gray-300 text-sm mt-1">{item.label}</p>
             </div>
           ))}
         </div>

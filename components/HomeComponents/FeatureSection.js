@@ -4,7 +4,7 @@ import { FaPlayCircle, FaUserGraduate, FaBookOpen } from "react-icons/fa";
 
 export default function FeatureSection() {
   return (
-      <div className="max-w-7xl mx-auto mt-15 px-6 ">
+      <div className="max-w-7xl mx-auto mt-15 px-6 lg:px-0">
     <section className="bg-sky-500 text-white py-15 rounded-3xl  mt-12 relative overflow-hidden shadow-md">
       {/* Subtle background circle design */}
       <div className="absolute right-10 top-10 w-40 h-40 bg-white/10 rounded-full"></div>

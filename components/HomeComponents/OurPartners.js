@@ -24,7 +24,7 @@ const OurPartners = () => {
 
     return (
       <div>
-        <section className="relative text-black max-w-7xl mx-auto mt-15 overflow-hidden px-6 mb-10">
+        <section className="relative text-black max-w-7xl mx-auto mt-14 overflow-hidden px-6 mb-10">
            
             {/* Logos Slider */}
             <div className=" relative z-10 ">
