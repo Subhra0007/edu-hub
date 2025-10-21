@@ -17,14 +17,14 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="container mx-auto  max-w-6xl py-10 px-6 lg:px-0">
-      <h2 className="text-4xl font-bold text-center mb-6 text-black">Testimonials</h2>
-      <div className="relative overflow-hidden z-10">
+    <div className="container mx-auto  max-w-7xl mt-15 px-6 lg:mt-20 ">
+      <h2 className="text-4xl font-bold text-center  text-black">Testimonials</h2>
+      <div className="relative overflow-hidden z-10 mt-1">
           {/* Left & Right fade */}
-          <div className="hidden lg:block pointer-events-none absolute top-0 left-0 h-full w-30 bg-gradient-to-r from-teal-50 to-transparent z-10"></div>
-          <div className="hidden lg:block pointer-events-none absolute top-0 right-0 h-full w-30 bg-gradient-to-l from-teal-50 to-transparent z-10"></div>
+          <div className="hidden lg:block pointer-events-none absolute top-0 left-0 h-full w-30 bg-gradient-to-r from-slate-100 to-transparent z-10"></div>
+          <div className="hidden lg:block pointer-events-none absolute top-0 right-0 h-full w-30 bg-gradient-to-l from-slate-100 to-transparent z-10"></div>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={4}
         spaceBetween={20}
         loop={true}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -44,21 +44,21 @@ const Testimonials = () => {
           <SwiperSlide key={index}
           className=" py-10"
           >
-            <div className="bg-gradient-to-r from-pink-100 to-emerald-100 p-6 rounded-lg shadow-md flex flex-col justify-center items-center w-[300px] h-[200px] mx-auto ">
-              <p className="text-gray-700 italic text-center text-sm">&quot;{testimonial.comment}&quot;</p>
+            <div className="bg-gradient-to-r from-sky-400 to-emerald-600 p-6 rounded-lg shadow-md flex flex-col justify-center items-center w-[250px] h-[200px] mx-auto ">
+              <p className="text-gray-800 italic text-center text-sm">&quot;{testimonial.comment}&quot;</p>
               <p className="mt-4 font-semibold text-gray-900">{testimonial.user}</p>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
       </div>
-   <div className="bg-emerald-500 text-black py-10 rounded-3xl ">
+   <div className="bg-sky-500 text-black py-10 rounded-3xl mt-15">
   <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center justify-between px-10">
     <div>
       <h3 className="text-3xl font-semibold mb-3">
         Interested in Our Courses?
       </h3>
-      <p className="text-lg">
+      <p className="text-lg text-gray-800">
         Register now to get enrollment.
       </p>
     </div>

@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-transparent px-6">
-      <div className="max-w-6xl mx-auto flex items-center justify-between py-3 px-6 mt-4 rounded-3xl bg-emerald-500 text-black shadow-xl">
+      <div className="max-w-7xl mx-auto flex items-center justify-between py-3 px-6 mt-1 rounded-3xl bg-slate-900 text-black shadow-xl">
         
         {/* ===== Logo ===== */}
         <Link href="/" className="flex items-center">
@@ -50,7 +50,7 @@ export default function Navbar() {
                 <Link
                   href={item.href}
                   className={`transition-colors duration-300 ${
-                    isActive ? "text-white" : "text-black "
+                    isActive ? "text-emerald-500" : "text-slate-50 "
                   }`}
                 >
                   {item.name}
@@ -62,7 +62,7 @@ export default function Navbar() {
                   animate={{
                     width:
                       hovered === item.href || isActive ? "100%" : "0%",
-                    backgroundColor: isActive ? "#ffffff" : "#D53F8C",
+                    backgroundColor: isActive ? "#ffffff" : "#ea580c",
                   }}
                   transition={{ duration: 0.3 }}
                   className="absolute left-0 -bottom-1 h-[2px] rounded-full"

@@ -189,14 +189,14 @@ const courses = [
 
 export default function MostPopularCourses() {
   return (
-    <section className="py-30 text-black bg-teal-50">
+    <section className="pt-25 text-black bg-slate-100 pb-10">
       <div className="container max-w-6xl mx-auto px-6 lg:px-0">
         {/* Header */}
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold ">
-            Our <span className="text-emerald-600">Courses</span>
+            Our <span className="text-orange-600">Courses</span>
           </h2>
-         <p className="leading-relaxed mt-5">
+         <p className="leading-relaxed mt-5 text-gray-800">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             </p>
         </div>
@@ -206,53 +206,54 @@ export default function MostPopularCourses() {
           {courses.map((course) => (
             <div
               key={course.id}
-              className="rounded-xl overflow-hidden shadow-md transition-transform duration-300 hover:scale-[1.03] bg-white"
+              className="rounded-xl overflow-hidden shadow-md transition-transform duration-300 hover:scale-[1.03] bg-sky-500"
             >
-              <div className="relative">
-                <Image
-                  src={course.image}
-                  alt={course.title}
-                  width={400}
-                  height={250}
-                  className="w-full h-40 object-cover rounded-t-xl"
-                />
-                <span className="absolute top-2 left-2 bg-red-500 text-xs font-semibold px-3 py-1 rounded-full text-white">
-                  {course.level}
-                </span>
-              </div>
+             <div className="relative p-2">
+                                 <Image
+                                   src={course.image}
+                                   alt={course.title}
+                                   width={400}
+                                   height={250}
+                                   className="w-full h-40 object-cover rounded-2xl"
+                                 />
+                                 <span className="absolute top-4 left-4 bg-red-500 text-xs font-semibold px-3 py-1 rounded-full">
+                                   {course.level}
+                                 </span>
+                               </div>
 
-              <div className="p-5 flex flex-col justify-between h-[220px] mb-5">
-                <div>
-                  <span className="text-xs bg-gray-100 px-2 py-1 rounded-md">
-                    {course.category}
-                  </span>
+                           <div className="p-5 flex flex-col justify-between h-[220px] mb-5">
+                    <div>
+                      <span className="text-xs bg-gray-100 px-2 py-1 rounded-md">
+                        {course.category}
+                      </span>
 
-                  <h3 className="mt-3 text-lg font-semibold leading-tight">
-                    {course.title}
-                  </h3>
+                      <h3 className="mt-3 text-lg font-semibold leading-tight">
+                        {course.title}
+                      </h3>
 
-                  <div className="flex items-center mt-2 text-sm text-yellow-400">
-                    ⭐ {course.rating}
-                    <span className="text-gray-400 ml-1">
-                      ({course.reviews})
-                    </span>
+                      <div className="flex items-center mt-2 text-sm text-yellow-400">
+                        ⭐ {course.rating}
+                        <span className="text-gray-900 ml-1">
+                          ({course.reviews})
+                        </span>
+                      </div>
+
+                      <div className="mt-2 text-gray-900 text-sm">
+                        📘 {course.lessons} Lessons
+                      </div>
+                    </div>
+
+                    <div>
+                      <p className="text-sm mt-2">
+                        By:{" "}
+                        <span className="text-slate-700">{course.author}</span>
+                      </p>
+
+                      <p className="mt-3 text-black font-semibold ">
+                        {course.price}
+                      </p>
+                    </div>
                   </div>
-
-                  <div className="mt-2 text-gray-400 text-sm">
-                    📘 {course.lessons} Lessons
-                  </div>
-                </div>
-
-                <div>
-                  <p className="text-sm mt-2">
-                    By: <span className="text-green-500">{course.author}</span>
-                  </p>
-
-                  <p className="mt-3 text-green-500 font-semibold mb-3">
-                    {course.price}
-                  </p>
-                </div>
-              </div>
             </div>
           ))}
         </div>

@@ -19,7 +19,7 @@ export default function HomePage() {
  return (
   <>
    
-    <div className="relative min-h-screen bg-teal-50 overflow-hidden">
+    <div className="relative min-h-screen bg-slate-100 overflow-hidden">
     
       <HeroSection />
       <Categories/>

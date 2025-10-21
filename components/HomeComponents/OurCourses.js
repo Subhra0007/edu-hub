@@ -195,24 +195,24 @@ const courses = [
 
 export default function MostPopularCourses() {
   return (
-    <section className="py-10 text-black">
-      <div className="container max-w-6xl mx-auto px-6 lg:px-0">
+    <section className="mt-15 text-black">
+      <div className="container max-w-7xl mx-auto px-6 ">
         {/* Header */}
-        <div className="flex justify-between items-center mb-8">
+        <div className="flex justify-between items-center mb-5">
           <h2 className="text-3xl font-bold">
-            Our <span className="text-emerald-600">Courses</span>
+            Our <span className="text-orange-600">Courses</span>
           </h2>
           <Link 
             href="/courses"
-          className="bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2 rounded-lg lg:font-semibold transition text-center">
+          className="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2 rounded-lg lg:font-semibold transition text-center">
             View All Courses
           </Link>
         </div>
  
         <div className="relative overflow-hidden z-10">
           {/* Left & Right fade */}
-          <div className="hidden lg:block pointer-events-none absolute top-0 left-0 h-full w-30 bg-gradient-to-r from-teal-50 to-transparent z-10"></div>
-          <div className="hidden lg:block pointer-events-none absolute top-0 right-0 h-full w-30 bg-gradient-to-l from-teal-50 to-transparent z-10"></div>
+          <div className="hidden lg:block pointer-events-none absolute top-0 left-0 h-full w-30 bg-gradient-to-r from-slate-100 to-transparent z-10"></div>
+          <div className="hidden lg:block pointer-events-none absolute top-0 right-0 h-full w-30 bg-gradient-to-l from-slate-100 to-transparent z-10"></div>
 
           {/* Swiper Carousel with Pagination */}
           <Swiper
@@ -239,7 +239,7 @@ export default function MostPopularCourses() {
               <SwiperSlide key={course.id}
               className="py-10"
               >
-                <div className="rounded-xl overflow-hidden shadow-md transition-transform duration-300 h-full p-2 bg-white">
+                <div className="rounded-xl overflow-hidden shadow-md transition-transform duration-300 h-full p-2 bg-sky-500">
                   <div className="relative">
                     <Image
                       src={course.image}
@@ -265,12 +265,12 @@ export default function MostPopularCourses() {
 
                       <div className="flex items-center mt-2 text-sm text-yellow-400">
                         ⭐ {course.rating}
-                        <span className="text-gray-400 ml-1">
+                        <span className="text-gray-900 ml-1">
                           ({course.reviews})
                         </span>
                       </div>
 
-                      <div className="mt-2 text-gray-400 text-sm">
+                      <div className="mt-2 text-gray-900 text-sm">
                         📘 {course.lessons} Lessons
                       </div>
                     </div>
@@ -278,10 +278,10 @@ export default function MostPopularCourses() {
                     <div>
                       <p className="text-sm mt-2">
                         By:{" "}
-                        <span className="text-green-500">{course.author}</span>
+                        <span className="text-slate-700">{course.author}</span>
                       </p>
 
-                      <p className="mt-3 text-green-500 font-semibold mb-3">
+                      <p className="mt-3 text-black font-semibold mb-3">
                         {course.price}
                       </p>
                     </div>

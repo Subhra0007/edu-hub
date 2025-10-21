@@ -62,27 +62,27 @@ export default function AboutSection() {
   ];
 
   return (
-    <section className="py-10 relative">
-      <div className="max-w-6xl mx-auto relative px-6 lg:px-0">
+    <section className="mt-15 relative">
+      <div className="max-w-7xl mx-auto relative px-6 ">
         <h2 className="text-3xl font-bold mb-8 text-gray-800 text-center">
-          Why <span className="text-emerald-600">Choose</span> Us
+          Why <span className="text-orange-600">Choose</span> Us
         </h2>
         {/* Top Section */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center px-6 md:px-12 py-20 rounded-3xl bg-gradient-to-r from-pink-100 to-emerald-100 relative z-0 shadow-md">
+        <div className="grid lg:grid-cols-2 gap-12 items-center px-6 md:px-12 py-20 rounded-3xl bg-gradient-to-r from-sky-400 to-emerald-500 relative z-0 shadow-md">
           <div>
             <h2 className="text-4xl font-bold text-gray-800 mb-4">
-              We Build <span className="text-emerald-600">Digital Success</span>
+              We Build <span className="text-orange-600">Digital Success</span>
             </h2>
-            <p className="text-gray-600 mb-6 leading-relaxed">
+            <p className="text-gray-900 mb-6 leading-relaxed">
               Our mission is to empower brands through innovative digital strategies and cutting-edge technology.
             </p>
 
-            <ul className="space-y-2 text-gray-700 mb-6">
+            <ul className="space-y-2 text-gray-900 mb-6">
               <li className="flex items-center gap-2">
-                <span className="text-emerald-500 text-xl">•</span> Creative Marketing Solutions
+                <span className="text-orange-500 text-xl">•</span> Creative Marketing Solutions
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-emerald-500 text-xl">•</span> Scalable Web & App Development
+                <span className="text-orange-500 text-xl">•</span> Scalable Web & App Development
               </li>
             </ul>
 
@@ -112,12 +112,12 @@ export default function AboutSection() {
           {statsData.map((item, i) => (
             <div
               key={i}
-              className="bg-white shadow-md rounded-xl py-6 hover:shadow-lg transition"
+              className="bg-sky-500 shadow-md rounded-xl py-6 hover:shadow-lg transition"
             >
-              <h3 className="text-3xl font-bold text-emerald-600">
+              <h3 className="text-3xl font-bold text-black">
                 <Counter target={item.target} start={inView} />
               </h3>
-              <p className="text-gray-600 text-sm mt-1">{item.label}</p>
+              <p className="text-gray-700 text-sm mt-1">{item.label}</p>
             </div>
           ))}
         </div>

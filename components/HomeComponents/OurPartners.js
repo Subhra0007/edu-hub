@@ -24,28 +24,28 @@ const OurPartners = () => {
 
     return (
       <div>
-        <section className="relative text-black max-w-6xl mx-auto py-10 overflow-hidden px-6 lg:px-0">
+        <section className="relative text-black max-w-7xl mx-auto mt-15 overflow-hidden px-6 mb-10">
            
             {/* Logos Slider */}
             <div className=" relative z-10 ">
-                <h2 className="text-4xl font-bold text-center text-black mb-20">Our <span className="text-emerald-600">Partners</span></h2>
+                <h2 className="text-4xl font-bold text-center text-black mb-10">Our <span className="text-orange-600">Partners</span></h2>
               {/* Left fade */}
-              <div className="hidden lg:block pointer-events-none absolute top-0 left-0 h-full w-30 bg-gradient-to-r from-teal-50 to-transparent z-10"></div>
+              <div className="hidden lg:block pointer-events-none absolute top-0 left-0 h-full w-30 bg-gradient-to-r from-slate-100 to-transparent z-10"></div>
 
              {/* Right fade */}
-             <div className="hidden lg:block pointer-events-none absolute top-0 right-0 h-full w-30 bg-gradient-to-l from-teal-50 to-transparent z-10"></div>
+             <div className="hidden lg:block pointer-events-none absolute top-0 right-0 h-full w-30 bg-gradient-to-l from-slate-100 to-transparent z-10"></div>
 <Swiper
   slidesPerView="auto"
   spaceBetween={50}
   loop={true}
   speed={4000}
   autoplay={{
-    delay: 0,                 // no delay between slides
-    disableOnInteraction: false, // don't stop autoplay on click/tap
-    pauseOnMouseEnter: false,    // don't pause on hover
+    delay: 0,                 
+    disableOnInteraction: false, 
+    pauseOnMouseEnter: false,   
   }}
-  allowTouchMove={true}  // enable drag
-  grabCursor={true}      // show grabbing cursor
+  allowTouchMove={true} 
+  grabCursor={true}      
   freeMode={false}    
            
   modules={[Autoplay, FreeMode]}

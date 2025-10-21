@@ -85,9 +85,9 @@ export default function About() {
   ];
 
   const about2 = [
-    { icon: <FaLightbulb className="text-3xl text-white" />, title: "Innovation", desc: "We bring creative approaches to learning and education." },
-    { icon: <FaUsers className="text-3xl text-white" />, title: "Community", desc: "We foster collaboration between educators and learners." },
-    { icon: <FaBullseye className="text-3xl text-white" />, title: "Focus", desc: "We focus on meaningful results and student growth." },
+    { icon: <FaLightbulb className="text-3xl text-orange-600" />, title: "Innovation", desc: "We bring creative approaches to learning and education." },
+    { icon: <FaUsers className="text-3xl text-orange-600" />, title: "Community", desc: "We foster collaboration between educators and learners." },
+    { icon: <FaBullseye className="text-3xl text-orange-600" />, title: "Focus", desc: "We focus on meaningful results and student growth." },
   ];
 
 
@@ -100,14 +100,14 @@ export default function About() {
   ];
 
   return (
-    <div className="text-black px-6 py-30 space-y-24 bg-teal-50">
-      <div className="max-w-6xl mx-auto ">
+    <div className="text-gray-800 px-6 pt-22 pb-10 space-y-24 bg-slate-100">
+      <div className="max-w-7xl mx-auto ">
 
         {/* ========== How it started ========== */}
         <section className="grid md:grid-cols-2 gap-10 items-top mb-10">
-          <div className="lg:text-left text-center bg-gradient-to-r from-pink-100 to-emerald-100  rounded-2xl p-8  ">
-            <h2 className="text-emerald-600 text-sm uppercase mb-2 tracking-wider">How it started</h2>
-            <h1 className="text-4xl font-bold leading-tight mb-4">
+          <div className="lg:text-left text-center bg-gradient-to-r from-sky-400 to-emerald-500  rounded-2xl p-8  ">
+            <h2 className="text-orange-600 text-sm uppercase mb-2 tracking-wider">How it started</h2>
+            <h1 className="text-4xl font-bold leading-tight mb-4 text-black">
               Our Dream is <br /> Global Learning Transformation
             </h1>
             <p className="leading-relaxed">
@@ -129,11 +129,11 @@ export default function About() {
             {/* Stats Section with Counting Animation */}
             <div ref={triggerRef} className="grid grid-cols-2 gap-4">
               {statsData.map((s, i) => (
-                <div key={i} className="bg-emerald-500 rounded-xl text-center py-6  transition">
-                  <h3 className="text-2xl font-semibold text-white">
+                <div key={i} className="bg-sky-500 rounded-xl text-center py-6  transition">
+                  <h3 className=" text-3xl font-bold text-black">
                     <Counter target={s.target} start={inView} />
                   </h3>
-                  <p className="text-black text-lg font-semibold">{s.label}</p>
+                  <p className="text-gray-700 text-sm mt-1">{s.label}</p>
                 </div>
               ))}
             </div>
@@ -141,19 +141,19 @@ export default function About() {
         </section>
 
         {/* ========== Mission & Vision ========== */}
-        <section className="grid md:grid-cols-2 gap-10 mb-10">
-          <div className=" bg-gradient-to-r from-pink-100 to-emerald-100  rounded-2xl p-8  transition">
-            <FaBullseye className="text-4xl text-emerald-600 mb-4" />
-            <h2 className="text-2xl font-bold mb-3">Our Mission</h2>
-            <p className="text-gray-900">
+        <section className="grid md:grid-cols-2 gap-10 mb-10 mt-10">
+          <div className=" bg-gradient-to-r from-sky-400 to-emerald-500  rounded-2xl p-8  transition">
+            <FaBullseye className="text-4xl text-orange-600 mb-4" />
+            <h2 className="text-2xl font-bold mb-3 text-black">Our Mission</h2>
+            <p className="text-gray-800">
               Empower educators and learners through intelligent tools and personalized education systems.
             </p>
           </div>
 
-          <div className="bg-gradient-to-r from-pink-100 to-emerald-100 rounded-2xl p-8 hover:bg-gray-900/80 transition">
-            <FaEye className="text-4xl text-emerald-600 mb-4" />
-            <h2 className="text-2xl font-bold mb-3">Our Vision</h2>
-            <p className="text-gray-900">
+          <div className="bg-gradient-to-r from-sky-400 to-emerald-500 rounded-2xl p-8 hover:bg-gray-900/80 transition">
+            <FaEye className="text-4xl text-orange-600 mb-4" />
+            <h2 className="text-2xl font-bold mb-3 text-black">Our Vision</h2>
+            <p className="text-gray-800">
               To create a globally connected education ecosystem powered by automation, innovation, and human touch.
             </p>
           </div>
@@ -163,13 +163,13 @@ export default function About() {
     {/* ========== Meet the Team ========== */}
 <section className=" relative mt-20 px-4">
   <h2 className="text-center text-3xl font-bold mb-5">
-    Meet our dedicated team of <span className="text-emerald-600">Educators</span>
+    Meet our dedicated team of <span className="text-orange-600">Educators</span>
   </h2>
  {/* Left fade */}
-                     <div className="hidden lg:block pointer-events-none absolute top-0 left-0 h-full w-30 bg-gradient-to-r from-teal-50 to-transparent z-10"></div>
+                     <div className="hidden lg:block pointer-events-none absolute top-0 left-0 h-full w-30 bg-gradient-to-r from-slate-100 to-transparent z-10"></div>
        
                     {/* Right fade */}
-                    <div className="hidden lg:block pointer-events-none absolute top-0 right-0 h-full w-30 bg-gradient-to-l from-teal-50 to-transparent z-10"></div>
+                    <div className="hidden lg:block pointer-events-none absolute top-0 right-0 h-full w-30 bg-gradient-to-l from-slate-100 to-transparent z-10"></div>
   <Swiper
     slidesPerView="auto"
     spaceBetween={30} // Reduced for better spacing
@@ -192,17 +192,17 @@ export default function About() {
         className="py-10"
         style={{ width: '250px' }} // Fixed width for each slide
       >
-        <div className="bg-white shadow-md rounded-2xl overflow-hidden transition  w-[250px] h-[350px] flex flex-col">
+        <div className="bg-sky-500 shadow-md rounded-3xl overflow-hidden transition  w-[250px] h-[300px] flex flex-col p-2">
           <Image
             src={member.img}
             alt={member.name}
             width={250}
             height={200}
-            className="w-full h-[200px] object-cover" // Fixed image height
+            className=" h-[200px] object-cover  rounded-3xl" // Fixed image height
           />
           <div className="p-5 text-center flex flex-col justify-center flex-grow">
             <h3 className="font-semibold text-lg">{member.name}</h3>
-            <p className="text-emerald-600 text-sm">{member.role}</p>
+            <p className="text-orange-600 text-sm">{member.role}</p>
           </div>
         </div>
       </SwiperSlide>
@@ -212,15 +212,15 @@ export default function About() {
 
         {/* ========== About (2) ========== */}
          <h2 className="text-3xl font-bold mb-8 text-gray-800 text-center mt-10">
-          Why <span className="text-emerald-600">Choose</span> Us
+          Why <span className="text-orange-600">Choose</span> Us
         </h2>
         <section className="grid md:grid-cols-3 gap-10 mb-20">
            
           {about2.map((item, i) => (
-            <div key={i} className="bg-emerald-500  rounded-2xl p-8 text-center transition shadow-md ">
+            <div key={i} className="bg-sky-500  rounded-2xl p-8 text-center transition shadow-md ">
               <div className="flex justify-center mb-4 ">{item.icon}</div>
               <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-              <p className="text-gray-900">{item.desc}</p>
+              <p className="text-gray-800">{item.desc}</p>
             </div>
           ))}
         </section>
@@ -229,14 +229,14 @@ export default function About() {
 
         {/* ========== Testimonials ========== */}
         <section>
-          <div className="container mx-auto  max-w-6xl mt-10">
-      <h2 className="text-4xl font-bold text-center mb-6 text-black">Testimonials</h2>
+          <div className="container mx-auto  max-w-7xl mt-8">
+      <h2 className="text-4xl font-bold text-center mb-4 text-black">Testimonials</h2>
       <div className="relative overflow-hidden z-10 mb-10">
           {/* Left & Right fade */}
-          <div className="hidden lg:block pointer-events-none absolute top-0 left-0 h-full w-30 bg-gradient-to-r from-teal-50 to-transparent z-10"></div>
-          <div className="hidden lg:block pointer-events-none absolute top-0 right-0 h-full w-30 bg-gradient-to-l from-teal-50 to-transparent z-10"></div>
+          <div className="hidden lg:block pointer-events-none absolute top-0 left-0 h-full w-30 bg-gradient-to-r from-slate-100 to-transparent z-10"></div>
+          <div className="hidden lg:block pointer-events-none absolute top-0 right-0 h-full w-30 bg-gradient-to-l from-slate-100 to-transparent z-10"></div>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={4}
         spaceBetween={20}
         loop={true}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -256,21 +256,21 @@ export default function About() {
           <SwiperSlide key={index}
           className=" py-10"
           >
-            <div className="bg-gradient-to-r from-pink-100 to-emerald-100 p-6 rounded-lg shadow-md flex flex-col justify-center items-center w-[300px] h-[200px] mx-auto ">
-              <p className="text-gray-700 italic text-center text-sm">&quot;{testimonial.comment}&quot;</p>
+            <div className="bg-gradient-to-r from-sky-400 to-emerald-600 p-6 rounded-lg shadow-md flex flex-col justify-center items-center w-[250px] h-[200px] mx-auto ">
+              <p className="text-gray-800 italic text-center text-sm">&quot;{testimonial.comment}&quot;</p>
               <p className="mt-4 font-semibold text-gray-900">{testimonial.user}</p>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
       </div>
-       <div className="bg-emerald-500 text-black py-10 rounded-3xl ">
-  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center justify-between px-10">
+       <div className="bg-sky-500 text-black py-10 rounded-3xl mt-16 ">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center justify-between px-10">
     <div>
       <h3 className="text-3xl font-semibold mb-3">
         Interested in Our Courses?
       </h3>
-      <p className="text-lg">
+      <p className="text-lg text-gray-800">
         Register now to get enrollment.
       </p>
     </div>
@@ -290,16 +290,16 @@ export default function About() {
         </section>
 
         {/* ========== Partners ========== */}
-        <section className="relative text-black max-w-6xl mx-auto mt-10 overflow-hidden">
+        <section className="relative text-black max-w-7xl mx-auto mt-15 overflow-hidden">
                   
                    {/* Logos Slider */}
                    <div className=" relative z-10 ">
-                       <h2 className="text-4xl font-bold text-center text-black mb-20">Our <span className="text-emerald-600">Partners</span></h2>
+                       <h2 className="text-4xl font-bold text-center text-black mb-10">Our <span className="text-orange-600">Partners</span></h2>
                      {/* Left fade */}
-                     <div className="hidden lg:block pointer-events-none absolute top-0 left-0 h-full w-30 bg-gradient-to-r from-teal-50 to-transparent z-10"></div>
+                     <div className="hidden lg:block pointer-events-none absolute top-0 left-0 h-full w-30 bg-gradient-to-r from-slate-100 to-transparent z-10"></div>
        
                     {/* Right fade */}
-                    <div className="hidden lg:block pointer-events-none absolute top-0 right-0 h-full w-30 bg-gradient-to-l from-teal-50 to-transparent z-10"></div>
+                    <div className="hidden lg:block pointer-events-none absolute top-0 right-0 h-full w-30 bg-gradient-to-l from-slate-100 to-transparent z-10"></div>
        <Swiper
          slidesPerView="auto"
          spaceBetween={50}
