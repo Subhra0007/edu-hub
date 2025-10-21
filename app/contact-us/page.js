@@ -64,54 +64,59 @@ const ContactUs = () => {
   return (
     <section className="relative  bg-slate-100 text-black px-6 overflow-hidden lg:px-0 pt-25 pb-10">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 relative z-10">
-        {/* Contact Info */}
-        <div className="lg:w-1/2 space-y-4">
-          <div className="relative rounded-3xl p-6 backdrop-blur-xl border border-white/10 overflow-hidden shadow-lg transition-all duration-300 flex flex-col gap-3 h-full bg-slate-900">
-            <div className="relative z-10">
-              <h3 className="text-2xl font-semibold mb-3 text-orange-500 text-left">
-                Contact Information
-              </h3>
-              <p className="text-gray-300 font-bold text-left">Cyberspace Works</p>
+      {/* Contact Info */}
+<div className="lg:w-1/2 space-y-4">
+  <div className="relative rounded-3xl p-6 backdrop-blur-xl border border-white/10 overflow-hidden shadow-lg transition-all duration-300 flex flex-col gap-3 h-full bg-slate-900">
+    {/* Subtle background circle design - bottom right */}
+    <div className="absolute -right-4 -bottom-5 w-40 h-40 bg-white/10 rounded-full"></div>
+    <div className="absolute -right-10 -bottom-10 w-72 h-72 bg-white/10 rounded-full"></div>
 
-              <p className="text-gray-300 flex justify-start gap-2 mt-3">
-                <IoCallOutline />
-                <a href="tel:+911234567890" className="hover:underline">
-                  +91 1234567890
-                </a>
-              </p>
+    {/* Foreground Content */}
+    <div className="relative z-10">
+      <h3 className="text-2xl font-semibold mb-3 text-orange-500 text-left">
+        Contact Information
+      </h3>
+      <p className="text-gray-300 font-bold text-left">Cyberspace Works</p>
 
-              <p className="text-gray-300 flex items-center gap-2 mt-3">
-                <IoMailOutline />
-                <a href="mailto:abc@gmail.com" className="hover:underline">
-                  abc@gmail.com
-                </a>
-              </p>
+      <p className="text-gray-300 flex justify-start gap-2 mt-3">
+        <IoCallOutline />
+        <a href="tel:+911234567890" className="hover:underline">
+          +91 1234567890
+        </a>
+      </p>
 
-              <p className="text-gray-300 flex items-center gap-2 mt-3">
-                <IoLocationOutline />
-                <span>Jodhpur, Rajasthan, India</span>
-              </p>
+      <p className="text-gray-300 flex items-center gap-2 mt-3">
+        <IoMailOutline />
+        <a href="mailto:abc@gmail.com" className="hover:underline">
+          abc@gmail.com
+        </a>
+      </p>
 
-              <div className="flex justify-start space-x-4 mt-4 text-orange-500 text-lg sm:text-xl">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                  <FaFacebookF className="cursor-pointer hover:scale-110 transition" />
-                </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                  <FaInstagram className="cursor-pointer hover:scale-110 transition" />
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <FaWhatsapp className="cursor-pointer hover:scale-110 transition" />
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <FaMapMarkerAlt className="cursor-pointer hover:scale-110 transition" />
-                </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                  <FaLinkedin className="cursor-pointer hover:scale-110 transition" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <p className="text-gray-300 flex items-center gap-2 mt-3">
+        <IoLocationOutline />
+        <span>Jodhpur, Rajasthan, India</span>
+      </p>
+
+      <div className="flex justify-start space-x-4 mt-4 text-orange-500 text-lg sm:text-xl">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <FaFacebookF className="cursor-pointer hover:scale-110 transition" />
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <FaInstagram className="cursor-pointer hover:scale-110 transition" />
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <FaWhatsapp className="cursor-pointer hover:scale-110 transition" />
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <FaMapMarkerAlt className="cursor-pointer hover:scale-110 transition" />
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin className="cursor-pointer hover:scale-110 transition" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
         {/* Contact Form */}
         <div className="lg:w-1/2">

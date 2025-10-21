@@ -216,16 +216,16 @@ export default function MostPopularCourses() {
   };
 
   return (
-    <section className="mt-12 text-black">
+    <section className="mt-15 text-black">
       <div className="container max-w-7xl mx-auto px-6 lg:px-0">
         {/* Header */}
-        <div className="flex justify-between items-center mb-5">
+        <div className="flex justify-between items-center mb-4">
           <h2 className="text-3xl font-bold ">
             Our <span className="text-orange-600">Courses</span>
           </h2>
           <Link
             href="/courses"
-            className="bg-emerald-600 hover:bg-emerald-700 text-white px-5 py-2 rounded-lg lg:font-semibold transition text-center"
+            className="bg-sky-500 hover:bg-sky-400 px-5 py-2 rounded-lg lg:font-semibold transition text-center text-black" 
           >
             View All Courses
           </Link>

@@ -142,10 +142,10 @@ export default function About() {
 
         {/* ========== Mission & Vision ========== */}
         <section className="grid md:grid-cols-2 gap-10 mb-10 mt-15">
-          <div className=" bg-slate-900  rounded-3xl p-8  transition">
+          <div className=" bg-sky-300  rounded-3xl p-8  transition">
             <FaBullseye className="text-4xl text-orange-600 mb-4" />
-            <h2 className="text-2xl font-bold mb-3 text-slate-50">Our Mission</h2>
-            <p className="text-gray-300">
+            <h2 className="text-2xl font-bold mb-3 text-black">Our Mission</h2>
+            <p className="text-gray-800">
               Empower educators and learners through intelligent tools and personalized education systems.
             </p>
           </div>
@@ -211,10 +211,10 @@ export default function About() {
 </section>
 
         {/* ========== About (2) ========== */}
-         <h2 className="text-3xl font-bold mb-13 text-gray-800 text-center mt-6">
+         <h2 className="text-3xl font-bold mb-13 text-gray-800 text-center mt-5">
           Why <span className="text-orange-600">Choose</span> Us
         </h2>
-        <section className="grid md:grid-cols-3 gap-10 mb-15">
+        <section className="grid md:grid-cols-3 gap-10 mb-14 mt-3">
            
           {about2.map((item, i) => (
             <div key={i} className="bg-slate-900  rounded-3xl p-8 text-center transition shadow-md ">
@@ -230,6 +230,7 @@ export default function About() {
         {/* ========== Testimonials ========== */}
         <section>
           <div className="container mx-auto  max-w-7xl mt-3 px-6 lg:px-0">
+            
       <h2 className="text-4xl font-bold text-center mb-4 text-black">Testimonials</h2>
       <div className="relative overflow-hidden z-10 mb-3">
           {/* Left & Right fade */}
@@ -264,8 +265,10 @@ export default function About() {
         ))}
       </Swiper>
       </div>
-       <div className="bg-slate-900 text-slate-50 py-10 rounded-3xl mt-15 ">
-  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center justify-between px-10">
+       <div className="bg-slate-900 text-slate-50 py-10 rounded-3xl mt-15 text-center">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center justify-between px-10 relative">
+     <div className="absolute right-90 top-0 w-40 h-40 bg-white/10 rounded-full"></div>
+      <div className="absolute right-100 bottom-0 w-72 h-72 bg-white/10 rounded-full"></div>
     <div>
       <h3 className="text-3xl font-semibold mb-3">
         Interested in Our Courses?
@@ -278,7 +281,7 @@ export default function About() {
     <div className="flex justify-center  mt-6 md:mt-0 md:justify-end">
       <Link
         href="/contact-us"
-        className="bg-white text-black px-8 py-4 rounded-full font-semibold transition-all duration-300 border shadow border-white/50 hover:bg-gray-400"
+        className="bg-white text-black px-8 py-4 rounded-full font-semibold transition-all duration-300 border shadow border-white/50 hover:bg-gray-300"
       >
         Register →
       </Link>

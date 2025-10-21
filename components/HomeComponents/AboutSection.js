@@ -68,7 +68,10 @@ export default function AboutSection() {
           Why <span className="text-orange-600">Choose</span> Us
         </h2>
         {/* Top Section */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center px-6 md:px-12 py-20 rounded-3xl bg-gradient-to-r from-sky-300 to-emerald-300 relative z-0 shadow-md">
+        <div className="relative grid lg:grid-cols-2 gap-12 items-center px-6 md:px-12 py-20 rounded-3xl bg-gradient-to-r from-sky-300 to-emerald-300  z-0 shadow-md">
+          {/* Subtle background circle design - bottom right */}
+    <div className="absolute right-10 top-0 w-50 h-50 bg-white/10 rounded-full z-11"></div>
+    <div className="absolute right-0 top-0 w-32 h-32 bg-white/10 rounded-full z-11"></div>
           <div>
             <h2 className="text-4xl font-bold text-gray-800 mb-4">
               We Build <span className="text-orange-500">Digital Success</span>
@@ -88,7 +91,7 @@ export default function AboutSection() {
 
               <Link
             href="/about-us"
-            className="bg-emerald-700 hover:bg-emerald-800 text-white px-6 py-4 rounded-full font-semibold transition ">
+            className="bg-slate-50 hover:bg-gray-300 text-black px-6 py-4 rounded-full font-semibold transition ">
               About Us
             </Link>
           </div>

@@ -21,7 +21,7 @@ export default function HeroSection() {
   return (
     <div className="max-w-7xl mx-auto pt-22 pb-5 px-6 relative lg:px-0">
       <section className="rounded-3xl bg-gradient-to-r from-sky-300 to-emerald-300 shadow-md">
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 px-5 md:px-20 py-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 px-5  pt-10 pb-14">
           {/* LEFT CONTENT */}
           <div className="text-center md:text-left order-1">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
@@ -33,7 +33,7 @@ export default function HeroSection() {
             <div className="mb-6">
               <Link
                 href="/contact-us"
-                className="px-4 py-4 rounded-full bg-emerald-700 hover:bg-emerald-800 text-white font-semibold shadow hover:brightness-110 transition mr-5"
+                className="px-4 py-4 rounded-full bg-slate-50 hover:bg-gray-300 text-black font-semibold shadow hover:brightness-110 transition mr-5"
               >
                 Register →
               </Link>
@@ -158,7 +158,7 @@ export default function HeroSection() {
 </div>
 
       {/* 4 Feature Cards Section  only show for md and sm*/}
-      <div className="block lg:hidden">
+      <div className="block lg:hidden text-center">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 ">
       {/* Card 1 */}
     <div className="bg-slate-900 rounded-3xl p-6 shadow-md transition text-slate-50 ">

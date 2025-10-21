@@ -76,7 +76,7 @@ export default function Navbar() {
         <div className="hidden md:flex gap-4">
           <Link
             href="/contact-us"
-            className="px-4 py-2 rounded-full bg-white text-black font-semibold shadow hover:brightness-110 transition hover:bg-gray-400"
+            className="px-4 py-2 rounded-full bg-white text-black font-semibold shadow hover:brightness-110 transition hover:bg-gray-300"
           >
             Register
           </Link>
@@ -131,12 +131,12 @@ export default function Navbar() {
                 </li>
               );
             })}
-
-            <li className="pt-4">
+            <div className="flex pt-4 gap-3">
+            <li className="">
               <Link
                 href="/contact-us"
                 onClick={() => setIsOpen(false)}
-                className="block w-full text-center px-4 py-2 rounded-full bg-white text-black font-semibold shadow hover:brightness-110 transition hover:bg-gray-400"
+                className="block w-full text-center px-4 py-2 rounded-full bg-white text-black font-semibold shadow hover:brightness-110 transition hover:bg-gray-300"
               >
                 Register
               </Link>
@@ -152,6 +152,7 @@ export default function Navbar() {
             <span>Call Us</span>
           </Link>
             </li>
+            </div>
           </ul>
         </div>
       )}

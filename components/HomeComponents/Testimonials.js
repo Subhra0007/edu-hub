@@ -19,7 +19,7 @@ const Testimonials = () => {
   return (
     <div className="container mx-auto  max-w-7xl lg:mt-21 px-6 lg:px-0 mt-12">
       <h2 className="text-4xl font-bold text-center  text-black">Testimonials</h2>
-      <div className="relative overflow-hidden z-10 mt-3">
+      <div className="relative overflow-hidden z-10 mt-4">
           {/* Left & Right fade */}
           <div className="hidden lg:block pointer-events-none absolute top-0 left-0 h-full w-30 bg-gradient-to-r from-slate-100 to-transparent z-10"></div>
           <div className="hidden lg:block pointer-events-none absolute top-0 right-0 h-full w-30 bg-gradient-to-l from-slate-100 to-transparent z-10"></div>
@@ -52,8 +52,10 @@ const Testimonials = () => {
         ))}
       </Swiper>
       </div>
-   <div className="bg-slate-900 text-slate-50 py-10 rounded-3xl mt-15">
-  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center justify-between px-10">
+   <div className="bg-slate-900 text-slate-50 py-10 rounded-3xl mt-15 text-center">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center justify-between px-10 relative">
+    <div className="absolute right-90 top-0 w-40 h-40 bg-white/10 rounded-full"></div>
+      <div className="absolute right-100 bottom-0 w-72 h-72 bg-white/10 rounded-full"></div>
     <div>
       <h3 className="text-3xl font-semibold mb-3">
         Interested in Our Courses?
@@ -66,7 +68,7 @@ const Testimonials = () => {
     <div className="flex justify-center  mt-6 md:mt-0 md:justify-end">
       <Link
         href="/contact-us"
-        className="bg-white text-black px-8 py-4 rounded-full font-semibold transition-all duration-300 border shadow border-white/50 hover:bg-gray-400"
+        className="bg-white text-black px-8 py-4 rounded-full font-semibold transition-all duration-300 border shadow border-white/50 hover:bg-gray-300"
       >
         Register →
       </Link>
