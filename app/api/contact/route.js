@@ -41,8 +41,8 @@ export async function POST(req) {
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Contact:</strong> ${countryCode} ${contact}</p>
       <p><strong>Address:</strong> ${address}</p>
-        <p><strong>Interested Course:</strong> ${service}</p>
-        <p><strong>Message Details:</strong></p>
+        <p><strong>Interested Course:</strong> ${courses}</p>
+        <p><strong>Message Details:</strong> ${message}</p>
         <p>${requirement || "No additional message provided."}</p>
       `,
     };
