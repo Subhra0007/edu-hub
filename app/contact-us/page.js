@@ -66,7 +66,7 @@ const ContactUs = () => {
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 relative z-10">
       {/* Contact Info */}
 <div className="lg:w-1/2 space-y-4">
-  <div className="relative rounded-3xl p-8 backdrop-blur-xl border border-white/10 overflow-hidden shadow-lg transition-all duration-300 flex flex-col gap-3 h-full bg-slate-900">
+  <div className="relative rounded-3xl p-6 backdrop-blur-xl border border-white/10 overflow-hidden shadow-lg transition-all duration-300 flex flex-col gap-3 h-full bg-slate-900">
     {/* Subtle background circle design - bottom right */}
     <div className="absolute -right-4 -bottom-5 w-40 h-40 bg-white/10 rounded-full"></div>
     <div className="absolute -right-10 -bottom-10 w-72 h-72 bg-white/10 rounded-full"></div>

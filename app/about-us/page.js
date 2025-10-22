@@ -231,7 +231,7 @@ export default function About() {
 
         {/* ========== Testimonials ========== */}
         <section>
-          <div className="container mx-auto  max-w-7xl mt-3 px-6 lg:px-0">
+          <div className="container mx-auto  max-w-7xl mt-3 ">
             
       <h2 className="text-4xl font-bold text-center mb-4 text-black">Testimonials</h2>
       <div className="relative overflow-hidden z-10 mb-3">

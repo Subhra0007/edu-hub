@@ -10,7 +10,7 @@ export default function FeatureSection() {
       <div className="absolute right-10 top-10 w-40 h-40 bg-white/10 rounded-full"></div>
       <div className="absolute right-0 bottom-0 w-72 h-72 bg-white/10 rounded-full"></div>
 
-      <div className=" flex flex-col md:flex-row justify-between items-center gap-10  relative z-10 px-6">
+      <div className=" flex flex-col md:flex-row justify-between  gap-10  relative z-10">
         {/* Card 1 */}
         <div className="flex items-center gap-4">
           <FaPlayCircle size={50} className="text-orange-600" />

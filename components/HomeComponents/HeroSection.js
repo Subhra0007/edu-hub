@@ -44,42 +44,48 @@ export default function HeroSection() {
                 About Us
               </Link>
             </div>
-            <div className="flex justify-center md:justify-start items-center gap-3 pt-2">
-              {/* User Avatars */}
-      <div className="flex -space-x-3">
-        <Image
-          src={user1}
-          alt="User 1"
-          width={40}
-          height={40}
-          className="rounded-full border-1 border-gray-600 bg-white"
-        />
-        <Image
-          src={user2}
-          alt="User 2"
-          width={40}
-          height={40}
-          className="rounded-full border-1 border-gray-600 bg-white"
-        />
-        <Image
-          src={user3}
-          alt="User 3"
-          width={40}
-          height={40}
-          className="rounded-full border-1 border-gray-600 bg-white"
-        />
-      </div>
+        {/* Rating + Avatars Section */}
+<div className="flex flex-col items-center md:flex-row md:justify-start gap-3 pt-4">
 
-      {/* Rating */}
-      <div className="flex items-center gap-2">
-        <div className="flex text-orange-400">
-          <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
-        </div>
-        <p className="text-sm text-gray-800">
-          Rating <span className="font-semibold text-black">4.9</span> by 240+ users
-        </p>
-      </div>
-            </div>
+  {/* User Avatars (centered on mobile) */}
+  <div className="flex justify-center -space-x-3">
+    <Image
+      src={user1}
+      alt="User 1"
+      width={40}
+      height={40}
+      className="rounded-full border border-gray-600 bg-white"
+    />
+    <Image
+      src={user2}
+      alt="User 2"
+      width={40}
+      height={40}
+      className="rounded-full border border-gray-600 bg-white"
+    />
+    <Image
+      src={user3}
+      alt="User 3"
+      width={40}
+      height={40}
+      className="rounded-full border border-gray-600 bg-white"
+    />
+  </div>
+
+  {/* Stars + Rating (row for md+, stacked for sm) */}
+  <div className="flex flex-row items-center gap-5 lg:gap-2">
+    {/* Stars on left */}
+    <div className="flex text-orange-400">
+      <FaStar /><FaStar /><FaStar /><FaStar /><FaStar />
+    </div>
+
+    {/* Text on right */}
+    <p className="text-sm text-gray-800">
+      Rating <span className="font-semibold text-black">4.9</span> by 240+ users
+    </p>
+  </div>
+</div>
+
           </div>
 
           {/* RIGHT IMAGE SECTION */}

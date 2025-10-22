@@ -110,7 +110,8 @@ export default function AboutSection() {
         {/* Trigger div for counting */}
         <div ref={triggerRef} className="h-1 w-full" />
 
-        {/* Stats Row */}
+        {/* Stats Row for only lg*/}
+        <div className="hidden lg:block">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center absolute -bottom-16 left-1/2 -translate-x-1/2 w-[90%] lg:w-[80%] mb-10">
           {statsData.map((item, i) => (
             <div
@@ -124,6 +125,24 @@ export default function AboutSection() {
             </div>
           ))}
         </div>
+        </div>
+       {/* Stats Row for only sm and md */}
+<div className="block lg:hidden mt-10">
+  <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center w-full">
+    {statsData.map((item, i) => (
+      <div
+        key={i}
+        className="bg-slate-900 shadow-md rounded-xl py-6 hover:shadow-lg transition"
+      >
+        <h3 className="text-3xl font-bold text-slate-50">
+          <Counter target={item.target} start={inView} />
+        </h3>
+        <p className="text-gray-300 text-sm mt-1">{item.label}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
       </div>
     </section>
   );
